@@ -574,6 +574,9 @@ GEM
       parallel
     parser (3.2.2.1)
       ast (~> 2.4.1)
+    passenger (6.0.22)
+      rack
+      rake (>= 0.8.1)
     pg (1.4.1)
     pg_search (2.3.6)
       activerecord (>= 5.2)
@@ -846,6 +849,7 @@ DEPENDENCIES
   net-imap (~> 0.2.3)
   net-pop (~> 0.1.1)
   net-smtp (~> 0.3.1)
+  passenger
   puma (>= 6.3.1)
   sidekiq
   spring (~> 2.0)

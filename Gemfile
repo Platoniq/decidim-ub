@@ -47,3 +47,5 @@ group :production do
   gem "aws-sdk-s3", require: false
   gem "sidekiq"
 end
+
+gem "figaro", "~> 1.2"

@@ -1,6 +1,5 @@
 # decidim_ub
 
-
 [![[CI] Lint](https://github.com/Platoniq/decidim-ub/actions/workflows/lint.yml/badge.svg)](https://github.com/Platoniq/decidim-ub/actions/workflows/lint.yml)
 [![[CI] Test](https://github.com/Platoniq/decidim-ub/actions/workflows/test.yml/badge.svg)](https://github.com/Platoniq/decidim-ub/actions/workflows/test.yml)
 

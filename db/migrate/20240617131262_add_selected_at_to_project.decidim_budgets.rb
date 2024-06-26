@@ -3,7 +3,6 @@
 
 class AddSelectedAtToProject < ActiveRecord::Migration[5.2]
   def change
-    add_column :decidim_budgets_projects, :selected_at, :date
-    add_index :decidim_budgets_projects, :selected_at
+    add_column :decidim_budgets_projects, :selected_at, :date, index: true
   end
 end

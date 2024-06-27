@@ -51,5 +51,5 @@
 tailwind.config.js
 
 Capfile
-/config/deploy/*
+/config/deploy
 /config/deploy.rb

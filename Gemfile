@@ -9,7 +9,7 @@ gem "decidim", "0.28.1"
 # gem "decidim-design", "0.28.1"
 # gem "decidim-elections", "0.28.1"
 # gem "decidim-initiatives", "0.28.1"
-# gem "decidim-templates", "0.28.1"
+gem "decidim-templates", "0.28.1"
 
 gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "develop"
 

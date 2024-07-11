@@ -12,7 +12,7 @@ gem "decidim", "0.28.1"
 gem "decidim-templates", "0.28.1"
 
 gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "develop"
-gem "decidim-ub", git: "https://github.com/Platoniq/decidim-module-ub"
+gem "decidim-ub"
 
 gem "bootsnap", "~> 1.3"
 

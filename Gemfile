@@ -20,6 +20,9 @@ gem "puma", ">= 6.3.1"
 
 gem "wicked_pdf", "~> 2.1"
 
+# We were receiving a CookieOverflow error while using the UB OAuth
+gem "activerecord-session_store"
+
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
@@ -52,4 +55,5 @@ group :production do
   gem "figaro", "~> 1.2"
   gem "passenger"
   gem "sidekiq"
+  gem "whenever", require: false
 end

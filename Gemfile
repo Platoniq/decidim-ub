@@ -7,10 +7,10 @@ ruby RUBY_VERSION
 DECIDIM_VERSION = "0.28.2"
 
 gem "decidim", DECIDIM_VERSION
-# gem "decidim-conferences", "0.28.1"
-# gem "decidim-design", "0.28.1"
-# gem "decidim-elections", "0.28.1"
-# gem "decidim-initiatives", "0.28.1"
+# gem "decidim-conferences", DECIDIM_VERSION
+# gem "decidim-design", DECIDIM_VERSION
+# gem "decidim-elections", DECIDIM_VERSION
+# gem "decidim-initiatives", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
 
 gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "develop"

@@ -33,7 +33,7 @@ describe "Custom styles" do
       expect(page.body).to have_no_content("body {background: red;}")
     end
 
-    it "css is not applyied" do
+    it "css is not applied" do
       expect(page.execute_script("return window.getComputedStyle($('body')[0]).backgroundColor")).to eq("rgba(0, 0, 0, 0)")
     end
   end

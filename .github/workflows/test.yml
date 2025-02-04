@@ -45,6 +45,7 @@ jobs:
       - name: Precompile assets
         run: |
           npm install
+          apt-get update && apt-get install -y imagemagick
           bundle exec rake assets:precompile
         env:
           RAILS_ENV: test

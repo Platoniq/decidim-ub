@@ -10,7 +10,21 @@ checksums = [
     package: "decidim-core",
     files: {
       # views
-      "/app/views/layouts/decidim/footer/_mini.html.erb" => "ccead2f5f20557ea4db1501de943f82b"
+      "/app/views/layouts/decidim/footer/_mini.html.erb" => "ccead2f5f20557ea4db1501de943f82b",
+      # models
+      "/app/models/decidim/amendment.rb" => "a49c2328f9f612150ce15fd627066996",
+      # lib
+      "/lib/decidim/amendable.rb" => "62ea0c200eec2ac8cbc41fbb785c2bd8"
+    }
+  },
+  {
+    package: "decidim-proposals",
+    files: {
+      # views
+      "/app/views/decidim/proposals/admin/proposals/index.html.erb" => "0022a47b73b6274a2e1f9e90e322eb6b",
+      "/app/views/decidim/proposals/admin/proposals/_proposal-tr.html.erb" => "cb5926ce45a6e8b0d676bb2392bb84f7",
+      # models
+      "/app/models/decidim/proposals/proposal.rb" => "004d7e9620bddce9683bc7fdc02d9c49"
     }
   }
 ]

@@ -10,9 +10,6 @@ module Decidim
         validates :proposal, uniqueness: { scope: :author }
         validate :author_and_proposal_same_organization
         validate :proposal_not_rejected
-  
-        after_save :update_proposal_amendments_count
-        after_destroy :update_proposal_amendments_count
 
         def self.temporary
           where(temporary: true)
@@ -25,10 +22,6 @@ module Decidim
         end
   
         private
-  
-        def update_proposal_amendments_count
-          proposal.update_amendments_count
-        end
   
         def proposal_not_rejected
           return unless proposal

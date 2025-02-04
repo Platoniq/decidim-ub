@@ -173,9 +173,5 @@ module Decidim
           super
         end
       end
-
-      def update_amendments_count
-        update_columns(proposal_amendments_count: amendments.count)
-      end
     end
   end

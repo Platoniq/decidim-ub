@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_10_18_100811) do
+ActiveRecord::Schema.define(version: 2025_02_03_064999) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1241,6 +1241,13 @@ ActiveRecord::Schema.define(version: 2024_10_18_100811) do
     t.index ["decidim_component_id"], name: "idx_participatory_texts_on_decidim_component_id"
   end
 
+  create_table "decidim_proposals_proposal_amendments", id: :serial, force: :cascade do |t|
+    t.integer "decidim_proposal_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["decidim_proposal_id"], name: "decidim_proposals_proposal_amendment_proposal"
+  end
+
   create_table "decidim_proposals_proposal_notes", force: :cascade do |t|
     t.bigint "decidim_proposal_id", null: false
     t.bigint "decidim_author_id", null: false
@@ -1292,12 +1299,15 @@ ActiveRecord::Schema.define(version: 2024_10_18_100811) do
     t.integer "follows_count", default: 0, null: false
     t.integer "state", default: 0, null: false
     t.integer "valuation_assignments_count", default: 0
+    t.integer "proposal_amendments_count", default: 0, null: false
     t.index "md5((body)::text)", name: "decidim_proposals_proposal_body_search"
     t.index "md5((title)::text)", name: "decidim_proposals_proposal_title_search"
     t.index ["created_at"], name: "index_decidim_proposals_proposals_on_created_at"
     t.index ["decidim_component_id"], name: "index_decidim_proposals_proposals_on_decidim_component_id"
     t.index ["decidim_scope_id"], name: "index_decidim_proposals_proposals_on_decidim_scope_id"
+    t.index ["proposal_amendments_count"], name: "index_decidim_proposals_proposals_on_proposal_amendments_count"
     t.index ["proposal_votes_count"], name: "index_decidim_proposals_proposals_on_proposal_votes_count"
+    t.index ["state"], name: "index_decidim_proposals_proposals_on_state"
   end
 
   create_table "decidim_proposals_valuation_assignments", force: :cascade do |t|

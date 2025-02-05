@@ -12,5 +12,5 @@ ignore_missing:
   - layouts.decidim.footer.decidim_logo
   - layouts.decidim.footer.made_with_open_source
   - decidim.proposals.*
-  - activerecord.models.*
+  - activerecord.models.decidim/amendment.*
   - decidim.scopes.global

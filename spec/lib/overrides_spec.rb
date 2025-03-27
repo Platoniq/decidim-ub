@@ -11,10 +11,13 @@ checksums = [
     files: {
       # views
       "/app/views/layouts/decidim/footer/_mini.html.erb" => "ccead2f5f20557ea4db1501de943f82b",
+      "/app/views/decidim/account/show.html.erb" => "a0647f1740d696018f73ec8db8c7587a",
       # lib
       "/lib/decidim/amendable.rb" => "62ea0c200eec2ac8cbc41fbb785c2bd8",
       # models
-      "/app/models/decidim/amendment.rb" => "a49c2328f9f612150ce15fd627066996"
+      "/app/models/decidim/amendment.rb" => "a49c2328f9f612150ce15fd627066996",
+      # commands
+      "/app/commands/decidim/update_account.rb" => "363872116fb99372c046b7394d618333"
     }
   },
   {

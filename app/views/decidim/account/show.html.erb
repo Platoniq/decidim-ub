@@ -30,7 +30,7 @@
 
       <%= f.text_field :name, autocomplete: "name", readonly: true %>
       <%= f.text_field :nickname, autocomplete: "nickname", readonly: true %>
-      <%= f.email_field :email, disabled: current_user.unconfirmed_email.present?, autocomplete: "email", data: { original: current_user.email } %>
+      <%= f.email_field :email, disabled: current_user.unconfirmed_email.present?, autocomplete: "email", data: { original: current_user.email }, readonly: true %>
       <%= f.url_field :personal_url, autocomplete: "url" %>
       <%= f.text_area :about, rows: 5 %>
 

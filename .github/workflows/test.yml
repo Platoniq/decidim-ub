@@ -37,7 +37,9 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       - uses: nanasess/setup-chromedriver@v2
       - run: |
-          sudo apt install imagemagick --fix-missing
+          sudo apt update
+      - run: |
+          sudo apt install imagemagick
       - name: Setup & create Database
         run: bundle exec rake db:test:prepare
         env:

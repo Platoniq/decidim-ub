@@ -24,7 +24,7 @@ checksums = [
     package: "decidim-proposals",
     files: {
       # views
-      "/app/views/decidim/proposals/admin/proposals/index.html.erb" => "0022a47b73b6274a2e1f9e90e322eb6b",
+      "/app/views/decidim/proposals/admin/proposals/index.html.erb" => "c5c969edd5fa0a668db3f793209ed5d7",
       "/app/views/decidim/proposals/admin/proposals/_proposal-tr.html.erb" => "cb5926ce45a6e8b0d676bb2392bb84f7"
     }
   }

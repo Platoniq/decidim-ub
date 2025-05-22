@@ -19,21 +19,10 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y build-essential libpq-dev
-
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true
-
-      - name: Uninstall json
-        run: gem uninstall json -a --quiet
-
-      - name: Install json -v 2.6.3
-        run: gem install json -v 2.6.3
 
       - uses: actions/setup-node@master
         with:

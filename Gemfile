@@ -49,7 +49,7 @@ group :development do
 end
 
 group :production do
-  gem "appsignal"
+  gem "appsignal", "4.4.0"
   gem "aws-sdk-s3", require: false
   gem "figaro", "~> 1.2"
   gem "passenger"

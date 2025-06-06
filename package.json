@@ -4,7 +4,6 @@
   "dependencies": {
     "@decidim/browserslist-config": "^0.29.4",
     "@decidim/core": "^0.29.4",
-    "@decidim/elections": "^0.28.6",
     "@decidim/webpacker": "^0.29.4",
     "@rails/actioncable": "^6.1.710",
     "codemirror": "^5.65.19",

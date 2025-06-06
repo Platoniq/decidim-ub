@@ -7,6 +7,14 @@ GIT
       decidim-admin (~> 0.29.0)
       decidim-core (~> 0.29.0)
 
+GIT
+  remote: https://github.com/Platoniq/decidim-module-ub
+  revision: bf01e6c3834663926cbb6aa01614712c5590cf1c
+  tag: v0.2.0
+  specs:
+    decidim-ub (0.2.0)
+      decidim-core (>= 0.29.0, < 0.30)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -950,6 +958,7 @@ DEPENDENCIES
   decidim-dev (= 0.29.4)
   decidim-templates (= 0.29.4)
   decidim-term_customizer!
+  decidim-ub!
   figaro (~> 1.2)
   letter_opener_web (~> 2.0)
   listen (~> 3.1)

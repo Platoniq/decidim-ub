@@ -8,7 +8,7 @@ module Decidim
       def unified_mode?
         @unified_mode ||= begin
           mode = params["diff-mode"]
-          mode.nil? ? false : mode != "split" #
+          mode.nil? ? false : mode != "split"
         end
       end
 

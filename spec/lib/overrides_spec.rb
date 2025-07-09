@@ -17,7 +17,9 @@ checksums = [
       # models
       "/app/models/decidim/amendment.rb" => "a49c2328f9f612150ce15fd627066996",
       # commands
-      "/app/commands/decidim/update_account.rb" => "363872116fb99372c046b7394d618333"
+      "/app/commands/decidim/update_account.rb" => "363872116fb99372c046b7394d618333",
+      # cells
+      "/app/cells/decidim/diff_cell.rb" => "dd604fb3b026775475f49a4879bb1420"
     }
   },
   {

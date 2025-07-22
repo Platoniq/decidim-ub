@@ -4,4 +4,5 @@ Rails.application.config.to_prepare do
   Decidim::Amendable.include(Decidim::Overrides::AmendableOverride)
   Decidim::Amendment.include(Decidim::AmendmentOverride)
   Decidim::UpdateAccount.include(Decidim::UpdateAccountOverride)
+  Decidim::DiffCell.include(Decidim::DiffCellOverride)
 end

@@ -9,8 +9,8 @@ GIT
 
 GIT
   remote: https://github.com/Platoniq/decidim-module-ub
-  revision: 32164794aba0641146519fb3c7701fa70b280545
-  branch: patch/auth-error
+  revision: ca2051084e133b854dc91d47278e42ce4cb5528b
+  branch: release/0.29-stable
   specs:
     decidim-ub (0.2.0)
       decidim-core (>= 0.29.0, < 0.30)

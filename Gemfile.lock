@@ -9,8 +9,8 @@ GIT
 
 GIT
   remote: https://github.com/Platoniq/decidim-module-ub
-  revision: bf01e6c3834663926cbb6aa01614712c5590cf1c
-  tag: v0.2.0
+  revision: ca2051084e133b854dc91d47278e42ce4cb5528b
+  branch: release/0.29-stable
   specs:
     decidim-ub (0.2.0)
       decidim-core (>= 0.29.0, < 0.30)

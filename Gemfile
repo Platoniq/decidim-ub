@@ -14,8 +14,8 @@ gem "decidim", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
 
 gem "decidim-decidim_awesome", "~> 0.12.0"
-gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "master"
-gem "decidim-ub", git: "https://github.com/Platoniq/decidim-module-ub", tag: "v0.2.0"
+gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "release/0.29-stable"
+gem "decidim-ub", git: "https://github.com/Platoniq/decidim-module-ub", branch: "release/0.29-stable"
 
 gem "bootsnap", "~> 1.3"
 

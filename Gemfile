@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = "0.29.4"
+DECIDIM_VERSION = "0.30.6"
 
 gem "decidim", DECIDIM_VERSION
 # gem "decidim-conferences", DECIDIM_VERSION
@@ -13,9 +13,9 @@ gem "decidim", DECIDIM_VERSION
 # gem "decidim-initiatives", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
 
-gem "decidim-decidim_awesome", "~> 0.12.0"
-gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "release/0.29-stable"
-gem "decidim-ub", git: "https://github.com/Platoniq/decidim-module-ub", branch: "release/0.29-stable"
+gem "decidim-decidim_awesome", "~> 0.13.1"
+gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "main"
+gem "decidim-ub", git: "https://github.com/Platoniq/decidim-module-ub", branch: "main"
 
 gem "bootsnap", "~> 1.3"
 
@@ -31,7 +31,7 @@ group :development, :test do
   gem "mdl"
   gem "net-imap", "~> 0.2.3"
   gem "net-pop", "~> 0.1.1"
-  gem "net-smtp", "~> 0.3.1"
+  gem "net-smtp", "~> 0.5.0"
 end
 
 group :development do

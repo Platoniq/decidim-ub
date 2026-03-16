@@ -1,6 +1,7 @@
 # frozen_string_literal: true
-# This migration comes from decidim_meetings (originally 20210518133236)
 
+# This migration comes from decidim_meetings (originally 20210518133236)
+# This file has been modified by `decidim upgrade:migrations` task on 2026-03-12 14:10:30 UTC
 class MergeMinutesWithClosingReportInMeetingsTable < ActiveRecord::Migration[6.0]
   class Meeting < ApplicationRecord
     self.table_name = "decidim_meetings_meetings"

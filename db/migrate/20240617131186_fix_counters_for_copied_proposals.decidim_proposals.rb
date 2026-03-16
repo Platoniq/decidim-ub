@@ -1,6 +1,7 @@
 # frozen_string_literal: true
-# This migration comes from decidim_proposals (originally 20210318082934)
 
+# This migration comes from decidim_proposals (originally 20210318082934)
+# This file has been modified by `decidim upgrade:migrations` task on 2026-03-12 14:10:31 UTC
 class FixCountersForCopiedProposals < ActiveRecord::Migration[5.2]
   def up
     copies_ids = Decidim::ResourceLink

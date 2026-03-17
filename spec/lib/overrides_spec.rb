@@ -11,7 +11,7 @@ checksums = [
     files: {
       # views
       "/app/views/layouts/decidim/footer/_mini.html.erb" => "c67cc97db27cdcf926f60682e399f688",
-        "/app/views/decidim/account/show.html.erb" => "1c230c5c6bc02e0bb22e1ea92b0da96c",
+      "/app/views/decidim/account/show.html.erb" => "1c230c5c6bc02e0bb22e1ea92b0da96c",
       # lib
       "/lib/decidim/amendable.rb" => "51b3c86026f806b444b604fd1881a00e",
       # models

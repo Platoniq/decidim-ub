@@ -10,14 +10,14 @@ checksums = [
     package: "decidim-core",
     files: {
       # views
-      "/app/views/layouts/decidim/footer/_mini.html.erb" => "ccead2f5f20557ea4db1501de943f82b",
-      "/app/views/decidim/account/show.html.erb" => "f13218e2358a2d611996c2a197c0de25",
+      "/app/views/layouts/decidim/footer/_mini.html.erb" => "c67cc97db27cdcf926f60682e399f688",
+      "/app/views/decidim/account/show.html.erb" => "1c230c5c6bc02e0bb22e1ea92b0da96c",
       # lib
-      "/lib/decidim/amendable.rb" => "7db81cc2b9c12cc0d95a4ec481d2100f",
+      "/lib/decidim/amendable.rb" => "51b3c86026f806b444b604fd1881a00e",
       # models
-      "/app/models/decidim/amendment.rb" => "a49c2328f9f612150ce15fd627066996",
+      "/app/models/decidim/amendment.rb" => "3c8133bb6800312aab3f06c46eceaeb6",
       # commands
-      "/app/commands/decidim/update_account.rb" => "d24090fdd9358c38e6e15c4607a78e18",
+      "/app/commands/decidim/update_account.rb" => "2c4f0e5a693b4b46a8e39e12dd9ecb2a",
       # cells
       "/app/cells/decidim/diff_cell.rb" => "30c499b4b3eed47aae0cf69318842533"
     }
@@ -26,8 +26,8 @@ checksums = [
     package: "decidim-proposals",
     files: {
       # views
-      "/app/views/decidim/proposals/admin/proposals/index.html.erb" => "159af4c2fa3d759909a647796f474d6c",
-      "/app/views/decidim/proposals/admin/proposals/_proposal-tr.html.erb" => "057ee4242479109023a5904c8de55222"
+      "/app/views/decidim/proposals/admin/proposals/_proposals-thead.html.erb" => "24c74e018ea4ac719652dd4c5acd4a29",
+      "/app/views/decidim/proposals/admin/proposals/_proposal-tr.html.erb" => "608af89f7bfa800fe2e3c853f8e2ace0"
     }
   }
 ]

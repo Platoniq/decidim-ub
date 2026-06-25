@@ -1,6 +1,7 @@
 # frozen_string_literal: true
-# This migration comes from decidim (originally 20181022090732)
 
+# This migration comes from decidim (originally 20181022090732)
+# This file has been modified by `decidim upgrade:migrations` task on 2026-03-12 14:10:30 UTC
 class AddColumnsToPages < ActiveRecord::Migration[5.2]
   class StaticPage < ApplicationRecord
     self.table_name = :decidim_static_pages

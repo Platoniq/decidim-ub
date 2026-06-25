@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = "0.31.2"
+DECIDIM_VERSION = "0.31.3"
 
 gem "decidim", DECIDIM_VERSION
 # gem "decidim-conferences", DECIDIM_VERSION
@@ -15,7 +15,7 @@ gem "decidim-templates", DECIDIM_VERSION
 
 gem "decidim-decidim_awesome", "~> 0.14.0"
 gem "decidim-term_customizer", git: "https://github.com/openpoke/decidim-module-term_customizer.git", branch: "main"
-gem "decidim-ub", git: "https://github.com/Platoniq/decidim-module-ub", branch: "chore/upgrade-0.31"
+gem "decidim-ub", git: "https://github.com/Platoniq/decidim-module-ub", branch: "main"
 
 gem "bootsnap", "~> 1.3"
 

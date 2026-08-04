@@ -20,6 +20,7 @@ gem "decidim-ub", git: "https://github.com/Platoniq/decidim-module-ub", branch: 
 gem "bootsnap", "~> 1.3"
 
 gem "puma", ">= 6.3.1"
+gem "rack-attack", "~> 6.7"
 
 gem "wicked_pdf", "~> 2.1"
 

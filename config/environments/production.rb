@@ -83,10 +83,7 @@ Rails.application.configure do
   config.cache_store = :redis_cache_store, { url: ENV.fetch("REDIS_URL", "redis://localhost:6379") }
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
-  # Background jobs go to Sidekiq unless QUEUE_ADAPTER says otherwise. Without this, a missing
-  # QUEUE_ADAPTER silently fell back to Rails' in-process :async adapter, which loses queued jobs
-  # on every restart (on UB it lost the 0.30 PaperTrail data migration jobs, Nov 2026).
-  config.active_job.queue_adapter = ENV.fetch("QUEUE_ADAPTER", "sidekiq").to_sym
+  config.active_job.queue_adapter = ENV["QUEUE_ADAPTER"] if ENV["QUEUE_ADAPTER"].present?
   # config.active_job.queue_name_prefix = "decidim_ub_production"
 
   # Disable caching for Action Mailer templates even if Action Controller

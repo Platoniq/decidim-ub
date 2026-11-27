@@ -9,6 +9,7 @@ on:
 env:
   RUBY_VERSION: 3.3.14
   NODE_VERSION: 22.14.0
+  CHROME_VERSION: 151.0.7922.108
 
 jobs:
   test:
@@ -35,7 +36,16 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - uses: nanasess/setup-chromedriver@v2
+      - name: Install Chrome ${{ env.CHROME_VERSION }}
+        run: |
+          sudo apt-get update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y libu2f-udev
+          wget --no-verbose -O /tmp/chrome.deb https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${{ env.CHROME_VERSION }}-1_amd64.deb
+          sudo DEBIAN_FRONTEND=noninteractive dpkg -i /tmp/chrome.deb
+          rm /tmp/chrome.deb
+      - uses: nanasess/setup-chromedriver@v3
+        with:
+          chromedriver-version: ${{ env.CHROME_VERSION }}
       - run: |
           sudo apt update
           sudo apt install imagemagick
